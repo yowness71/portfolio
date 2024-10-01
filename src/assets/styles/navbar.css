@@ -1,0 +1,37 @@
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+ul li {
+  display: inline;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  transition: .3s;
+}
+ul li:hover {
+  color: var(--primary-color);
+}
+.nav-links {
+  width: 100%;
+  border: 3px solid rgb(47, 47, 47);
+  padding: 20px 69px;
+  border-radius: 100px;
+  background-color: var(--back-color);
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  border: 3px solid rgb(47, 47, 47);
+  border-radius: 100px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--back-color);
+}
+
