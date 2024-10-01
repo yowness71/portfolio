@@ -8,6 +8,11 @@
   padding: 30px 70px;
   margin-top: 30px;
 }
+.left {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+}
 .title {
   color: rgb(150, 150, 150);
   font-weight: bold;
@@ -16,7 +21,13 @@
 .title-container {
   margin-bottom: 20px;
 }
-.name {
+.name-container {
+ display: flex;
+ flex-direction: column;
+ 
+
+}
+.name{
   font-weight: bold;
   color: white;
   font-size: 25px;
@@ -24,6 +35,7 @@
 .buttons {
   display: flex;
   flex-direction: row;
+  gap: 20px;
 }
 button {
   display: flex;
@@ -34,6 +46,7 @@ button {
   color: white;
   border-radius: 5px;
   border: solid 2px #161616;
+  background-color: transparent;
 }
 button .text,
 button .icon {
@@ -49,12 +62,25 @@ button .icon img {
 .hire {
   background-color: var(--primary-color);
   box-shadow: inset 0px 2px #a8162c, 0px 0px 20px 0px #a8162c8a;
+  transition: 0.4s;
 }
-.hire  {
-    background-color: var(--primary-color);
-    box-shadow: inset 0px 2px #a8162c, 0px 0px 20px 0px #a8162c8a;
-  }
+.hire:hover {
+  background-color: var(--primary-color);
+  box-shadow: inset 0px 2px #a8162c, 0px 0px 20px 7px #a8162c8a;
+}
 .hire .spacer {
+  background-color: #161616;
+  height: 100%;
+  width: 2px;
+}
+button .icon img {
+  width: 15px;
+}
+.email {
+  transition: 0.4s;
+}
+
+.email .spacer {
   background-color: #161616;
   height: 100%;
   width: 2px;

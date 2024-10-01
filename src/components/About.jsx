@@ -1,6 +1,7 @@
 import React from "react";
 import "../assets/styles/about.css";
 import plus from "../assets/images/plus.svg";
+import copy from "../assets/images/copy.svg";
 
 const About = (props) => {
   return (
@@ -11,8 +12,14 @@ const About = (props) => {
             <div className="title">Web developer </div>
             <div className="title">Graphic Designer </div>
           </div>
-          <div className="name">
-            I' m {props.name} {props.lname}
+          <div className="name-container">
+            <span className="name">
+              I' m {props.name} {props.lname}
+            </span>
+            <span className="about">im a software developer web/mobile</span>
+            <span className="university">
+              university of abd el hamid ibn badis Mostaganem
+            </span>
           </div>
           <div className="buttons">
             <button className="hire">
@@ -25,7 +32,9 @@ const About = (props) => {
             <button className="email">
               <div className="text">Copy email</div>
               <div className="spacer"></div>
-              <div className="icon"> </div>
+              <div className="icon">
+                <img src={copy} alt="" />
+              </div>
             </button>
           </div>
         </div>

@@ -14,3 +14,8 @@ body {
   padding: 30px 20px;
   background-color: #161616;
 }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
