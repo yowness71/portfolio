@@ -3,6 +3,7 @@
 :root {
   --primary-color: #80091b;
   --back-color: #262626;
+  --border-color:   border: 3px solid rgb(47, 47, 47);
 }
 * {
   padding: 0;

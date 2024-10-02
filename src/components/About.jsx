@@ -2,8 +2,13 @@ import React from "react";
 import "../assets/styles/about.css";
 import plus from "../assets/images/plus.svg";
 import copy from "../assets/images/copy.svg";
+import pfp from "../assets/images/picture1.jpg";
 
 const About = (props) => {
+  function copyfuction() {
+    const email = "boukrayounes69@gmail.com";
+    navigator.clipboard.writeText(email);
+  }
   return (
     <>
       <div className="about-container">
@@ -18,7 +23,7 @@ const About = (props) => {
             </span>
             <span className="about">im a software developer web/mobile</span>
             <span className="university">
-              university of abd el hamid ibn badis Mostaganem
+              university of Abd El Hamid Ibn Badis Mostaganem
             </span>
           </div>
           <div className="buttons">
@@ -29,8 +34,8 @@ const About = (props) => {
                 <img src={plus} alt="" />
               </div>
             </button>
-            <button className="email">
-              <div className="text">Copy email</div>
+            <button onClick={copyfuction} className="email">
+              <div className="text">email</div>
               <div className="spacer"></div>
               <div className="icon">
                 <img src={copy} alt="" />
@@ -39,8 +44,13 @@ const About = (props) => {
           </div>
         </div>
         <div className="right">
-          <div className="title">Web developer </div>
-          <div className="title">Graphicpqspqzkpc Designer </div>
+          <div className="active">
+            <div className="active-dot"></div>
+            <span className="active-text">Available for job</span>
+          </div>
+          <div className="picture">
+            <img src={pfp} alt="" />
+          </div>
         </div>
       </div>
     </>
