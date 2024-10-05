@@ -21,7 +21,9 @@ const About = (props) => {
             <span className="name">
               I' m {props.name} {props.lname}
             </span>
-            <span className="about">im a software developer web/mobile</span>
+            <span className="about">
+              im a software developer web/mobile and designer
+            </span>
             <span className="university">
               university of Abd El Hamid Ibn Badis Mostaganem
             </span>
